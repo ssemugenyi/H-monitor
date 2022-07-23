@@ -1,0 +1,87 @@
+:root{
+    --h-monitor-primary:orange;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--h-monitor-primary);
+    border-radius: 0px 0px 20px 20px;
+    height: 6rem;
+    box-shadow: 0 0.4rem 0.6rem rgb(0 0 0 / 0.3);
+    padding: 0 3.6rem;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem;
+    
+}
+.title-bcg{
+    background-color: #555;
+    border-radius: 2.5rem;
+}
+
+.sens-container{
+    margin: 6rem auto;
+    width: 52rem;
+    height: 32rem;
+    background-color: #555;
+    border-radius: 1.1rem;
+    text-align: center;
+    position: relative;
+}
+.sens-details{
+    width: 100%;
+    margin: 3rem auto;
+    position: absolute;
+}
+.sens-name{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+.sens-value{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+.sens-progress{
+    margin-top: 1.6rem;
+    height: 1.5rem;
+}
+.footer-wrapper{
+    background-color:var(--h-monitor-primary);
+    padding: 1.5rem 0 12rem 0;
+    border-radius: 20px 20px 0px 0px ;
+    
+    
+}
+.footer-paragraph{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+}
