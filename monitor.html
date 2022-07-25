@@ -28,12 +28,16 @@
         <section class="section-sens">
             <div class="sens-container">
                 <div class="sens-details">
-                <span class="sens-name">Humidity</span>
-                <span class="sens-value">50%</span> <br>
-                <progress class="sens-progress" value="50" max="100"></progress>
+                <h4 class="sens-name">Humidity</h4>
+                <p class="sens-values">
+                    <span class="sens-indicator"></span>
+                    <small class="sens-value">0%</small>
+                </p>
+                <input type="range" value="0" id="max" min="135" max="315">            
                 </div>
-                <a class="title title-bcg" href="index.html">home</a>
+                
             </div>
+            <div class="sens-container"><a class="title title-bcg" href="index.html">home</a></div>
         </section>
     </main>
     <footer>
@@ -46,3 +50,14 @@
 
 </body>
 </html>
+<script type="text/javascript">
+    let x = document.getElementById('max');
+    
+    x.oninput=()=>{
+        let y = x.value - 135;
+        let z = y/1.8;
+        document.querySelector('span').style.transform=`rotate(${x.value}deg)`;
+        document.querySelector('small').innerText = z.toFixed(2)+ '%';
+    }
+
+</script>
