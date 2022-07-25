@@ -1,5 +1,7 @@
 :root{
-    --h-monitor-primary:orange;
+    --h-monitor-primary: rgb(233, 162, 40);
+    --h-monitor-secondary:#656565;
+    --h-monitor-tertiary:#cbcbcb;
 }
 html{
     font-size: 62.5%;
@@ -8,7 +10,7 @@ body{
     font-family: 'Rubik', sans-serif;
     line-height: 1;
     font-weight: 400;
-    color: #555;
+    color: var(--h-monitor-tertiary);
 }
 *{
     padding: 0;
